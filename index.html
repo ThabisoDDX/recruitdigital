@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recruit Digital</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <header class="masthead">
+        <figure class="logo">
+            <img src="./img/logo.png" alt="logo">
+        </figure>
+        <nav>
+            <img class="open" src="img/open.svg" onclick="showNav()" alt="close-nav">
+            <img class="close" src="img/close.svg" onclick="hideNav()" alt="close-nav">
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p><a class="signin"href="#">Sign In</a></p>
+        </nav>
+       
+    </header>
+    <section class="banner">
+        <img class="dots" src="img/dots.svg" alt="dots" />
+       <h2>We believe in the power of community.</h2> 
+       <form class="form">
+           <section>
+           <div class="Industry">
+                    <select>
+                        <option value="Select Industry">Select Industry</option>
+                        <option value="Information Technology">Information Technology</option>
+                    </select>
+                    <label>Industry Name</label>
+           </div>
+           <div class="province">
+                <select>
+                    <option value="Select Province">Select Province</option>
+                    <option value="Gauteng">Gauteng</option>
+                </select>
+               <label>Province Name</label>
+           </div>
+           <div class="city">
+                <select>
+                    <option value="Select City">Select City</option>
+                    <option value="Johannesburg">Johannesburg</option>
+                </select>
+               <label>City Name</label>
+           </div>
+           </section>
+           <button><img src="img/search.png" alt="search" /><span>Search</span></button>
+       </form>
+    </section>
+    <main>
+        <section class="clients">
+            <header>
+                <h2>Our Clients</h2>
+                <p>What makes us tick</p>
+            </header>
+            <div>
+                <ul>
+                    <li><img src="img/media24.png" alt="media24"></li>
+                    <li><img src="img/gloo.png" alt="gloo"></li>
+                    <li><img src="img/kaluma.png" alt="kaluma"></li>
+                    <li><img src="img/creative-spark.png" alt="spark"></li>
+                </ul>
+                <ul>
+                    <li><img src="img/mc-saatchi-abel.png" alt="saatchi"></li>
+                    <li><img src="img/primedia.png" alt="primedia"></li>
+                    <li><img src="img/takealot.com.png" alt="takealot"></li>
+                    <li><img src="img/media24.png" alt="media24"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="testimonial">
+            <figure>
+                <h2>testimonial</h2>
+                <img src="img/avatar.png" alt="avatar" />
+            </figure>
+            <article>
+                <p><span>"</span>Alex is a rare find in his industry! He is a consummate professional who intrinsically understands his clients and candidates' requirements. Alex adopts a hands-on approach that is felt by all who engage with him and his staff. His global understanding of the marketplace and the digital landscape sets him leading his competitors. I have thoroughly enjoyed working with Alex and will continue to do so for many years to come.<span>"</span></p>
+                <footer>
+                    <p>Philip Mostert | MD, Saidwot</p>
+                </footer>
+            </article>
+            <img class="dots" src="img/dots-large.svg" alt="dots">
+        </section>
+    </main>
+        
+    <script>
+        let showNav = () => {
+            let navigation = document.querySelector('.masthead nav');
+            if (navigation.style.visibility === "hidden") {
+                navigation.style.visibility = "visible";
+            } else {
+                navigation.style.visibility = "hidden";
+            }
+        }
+
+         let hideNav = () => {
+            let navigation = document.querySelector('.masthead nav');
+            if (navigation.style.visibility === "visible") {
+                navigation.style.visibility = "hidden";
+            } else {
+                navigation.style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+</html>

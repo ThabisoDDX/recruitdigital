@@ -1,0 +1,438 @@
+body {
+    font-family:'Calibri', 'Trebuchet MS', sans-serifs;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* < Header > */
+
+.masthead {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.masthead .logo {
+    height: auto;
+    margin: 1.5em 10em;
+}
+
+.masthead .logo img {
+    width: 50%;
+    height: auto;
+}
+
+.masthead nav {
+    position: relative;
+    width: 55%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1E1C1F;
+    border-radius: 0 0 0 50px;
+ }
+
+ .masthead nav .close,   .masthead nav .open {
+   display: none;
+}
+
+ .masthead nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 2.5em;
+ }
+
+ .masthead nav ul li{
+    margin: 1.9em .5em;
+ }
+
+ .masthead nav a {
+     font-weight: 100;
+    color: #ffffff;
+    text-decoration: none;
+ }
+
+ .masthead nav a.active {
+    color: #D6BD09;
+ }
+
+ .masthead nav ul a:hover {
+    color: #D6BD09;
+    transition: all .5s ease-out;
+ }
+
+ .masthead nav p {
+    margin: 1.9em 2.5em;
+ }
+
+ .masthead nav p .signin {
+    background: #D6BD09;
+    padding: 10px 20px;
+ }
+
+ /* </ Header > */
+
+ /*********************************************/
+
+ /* < Landing > */
+
+ .banner {
+     width: 100%;
+     height: 100vh;
+     background-color: #D6BD09;
+     background: url('../img/bg-landing.png') no-repeat;
+     background-size: 100%;
+     padding: 12em 10em;
+     box-sizing: border-box;
+ }
+
+ .banner .dots {
+    width: 20%;
+    position: absolute;
+    top: 6.4em;
+    left: 0;
+    opacity: .5;
+ }
+
+ .banner h2 {
+     color: #1E1C1F;
+    font-size: 4em;
+    width: 60%;
+    margin-bottom: .5em;
+}
+
+.banner form section {
+    width: 75%;
+    height: 80px;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-sizing: border-box;
+ }
+
+ .banner form section div {
+    width: 33.33%;
+    border-right: 1px solid rgba(90, 90, 90, 0.1);;
+    margin: 0 .5em;
+    margin-right: 1em;
+ }
+
+ .banner form select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width: 100%;
+    color: #D6BD09;
+    font-size: 1.2em;
+    border-style: none;
+    background: url(../img/arrow.png) no-repeat 90% / 14px;
+    position: relative;
+    box-sizing: border-box;
+ }
+
+
+
+.banner form label {
+    color: lightgrey;
+    display: block;
+ }
+
+ .banner form label {
+   color: lightgrey;
+   display: block;
+}
+
+.banner form button {
+   cursor: pointer;
+   color: #ffffff;
+   border-style: none;
+   padding: .75em 2em;
+   background-color: #1E1C1F;
+}
+
+.banner form button img {
+   float: left;
+}
+
+.banner form button span {
+   float: left;
+   font-size: 1.2em;
+   margin: .1em .2em;
+}
+
+ /* </ Landing > */
+
+ /************************************************/
+
+ /* < Clients > */
+
+ .clients {
+   text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5em 3em;
+    box-sizing: border-box;
+ }
+
+ .clients h2 {
+    color: #1E1C1F;
+   font-size: 3.2em;
+   font-weight: 400;
+}
+
+.clients p {
+   color: #D6BD09;
+   font-size: 1.4em;
+}
+
+.clients div {
+   width: 85%;
+   height: auto;
+   margin: 12em auto;
+   
+}
+
+.clients div ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
+
+.clients div ul img {
+   width: 50%;
+}
+
+  /* </ Clients > */
+
+  /**********************************************/
+
+  /* < Testimonial > */
+
+  .testimonial {
+     position: absolute;
+     clear: both;
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+  }
+
+.testimonial figure {
+   margin: 0;
+   z-index: 1;
+   background: #D6BD09;
+
+}
+
+.testimonial h2 {
+   height: 100vh;
+   color: #ffffff;
+   font-size: 7.2em;
+   text-transform: uppercase;
+   transform: rotate(270deg);
+   box-sizing: border-box;
+   padding-left: 0px;
+   position: absolute;
+}
+
+.testimonial figure img {
+   height: 100vh;
+   margin-left: 7em;
+}
+
+.testimonial figure img {
+   height: 100vh;
+}
+
+.testimonial figure img {
+   height: 100vh;
+}
+
+.testimonial article {
+   float: left;
+   width: 40%;
+   height: 80%;
+   margin: auto;
+   margin-left: -5%;
+   padding: 5%;
+   background-color: #1E1C1F;
+   z-index: 1;
+   box-sizing: border-box;
+}
+
+.testimonial article p {
+   color: #ffffff;  
+}
+
+.testimonial article p span {
+   display: block;
+   font-size: 4.2em; 
+}
+
+.testimonial article p span:last-child {
+   margin-top: 8%;
+   float: right;
+}
+
+.testimonial article footer {
+   margin-top: 30%;
+}
+
+.testimonial article footer p {
+   color: #D6BD09;
+}
+
+.testimonial .dots {
+   position: absolute;
+   top: 10em;
+   right: 0;
+   width: 25%;
+   z-index: 1;
+}
+
+
+    /* < Testimonial > */
+
+/* < Media Queries > */ 
+
+@media screen and (max-width: 480px) {
+
+   .masthead {
+     height: 100vh;
+   }
+   
+   .masthead nav {
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 2;
+      border-radius: 0;
+   }
+
+   .masthead .logo {
+      margin: 2.8em;
+  }
+
+   .masthead nav .close, .masthead nav .open {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 8%;
+      margin: 4em 4em;
+   }
+
+   .masthead nav .open {
+      display: block;
+      visibility: visible;
+   }
+
+   .masthead nav ul {
+      width: 100%;
+      display: block;
+      padding: 0;
+      margin: auto;
+   }
+
+   .masthead nav ul li {
+      margin: 0;
+   }
+
+   .masthead nav ul li a {
+      width: 100%;
+      display: block;
+      padding: .5em .5em;
+      font-size: 1.4em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+   }
+
+   .masthead nav p {
+      display: none;
+  }
+
+  .banner {
+      background: url(../img/bg-sm-lp.png) top right no-repeat; 
+      background-size: 100%;
+      padding: 0;
+      padding-top: 18em;
+      padding-left: 2.8em;
+  }
+ 
+   .banner .dots {
+      width: 60%;
+      top: 12em;
+   }
+
+   .banner h2 {
+      font-size: 3.2em;
+      width: 90%;
+      z-index: 1;
+      position: relative;
+  }
+
+  .banner .form {
+      display: none;
+  }
+
+  .clients {
+   padding: 2.5em;
+  }
+
+  .clients div ul {
+      flex-direction: column;
+      padding: 0;
+   }
+
+   .clients div {
+      margin: 3em auto;
+  }
+
+  .testimonial {
+      height: auto;
+      display: block;
+      margin-top: 5em;
+   }
+
+   .testimonial h2 {
+      height: 53vh;
+      font-size: 3.65em;
+   }
+
+  .testimonial figure {
+      height: 53vh;
+      overflow: hidden;
+   }
+
+   .testimonial figure img {
+      width: 100%;
+      height: auto;
+      margin-left: 3.2em;
+      margin-top: -4em;
+  }
+
+  .testimonial article {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-left: 0;
+   }
+
+   .testimonial article > p {
+     width: 80%;
+   }
+}
