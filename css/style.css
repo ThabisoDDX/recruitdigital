@@ -328,6 +328,7 @@ body {
   }
 
    .masthead nav .close, .masthead nav .open {
+      cursor: pointer;
       display: block;
       position: absolute;
       top: 0;
